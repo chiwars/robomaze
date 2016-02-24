@@ -1,0 +1,10 @@
+{
+    "name": "robomaze",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "robomaze.xml",
+    "author": "chiwars",
+    "minimum_firmware_version": 42
+}
