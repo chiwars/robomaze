@@ -1,5 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_if" id="83" inline="false" x="134" y="69">
+    <mutation else="1"></mutation>
     <value name="IF0">
       <block type="sensor_object" id="256">
         <field name="OBJECT">RIGHTFRONT</field>
@@ -34,6 +35,9 @@
           </block>
         </next>
       </block>
+    </statement>
+    <statement name="ELSE">
+      <block type="movement_forward" id="314"></block>
     </statement>
   </block>
 </xml>
