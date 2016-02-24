@@ -8,6 +8,7 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="83" inline="false">
+        <mutation elseif="2"></mutation>
         <value name="IF0">
           <block type="sensor_object" id="256">
             <field name="OBJECT">RIGHTFRONT</field>
@@ -34,6 +35,48 @@
                 </value>
                 <next>
                   <block type="movement_stop" id="189"></block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="sensor_object" id="1262">
+            <field name="OBJECT">LEFTSIDE</field>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="movement_forward" id="1272">
+            <next>
+              <block type="robot_delay" id="1340" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="1342">
+                    <field name="NUM">2000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_stop" id="1361"></block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF2">
+          <block type="sensor_object" id="1348">
+            <field name="OBJECT">RIGHTSIDE</field>
+          </block>
+        </value>
+        <statement name="DO2">
+          <block type="movement_forward" id="1358">
+            <next>
+              <block type="robot_delay" id="1359" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="1360">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_stop" id="1362"></block>
                 </next>
               </block>
             </next>
