@@ -8,7 +8,7 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="83" inline="false">
-        <mutation elseif="2"></mutation>
+        <mutation elseif="2" else="1"></mutation>
         <value name="IF0">
           <block type="sensor_object" id="256">
             <field name="OBJECT">RIGHTFRONT</field>
@@ -81,6 +81,9 @@
               </block>
             </next>
           </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="movement_forward" id="1378"></block>
         </statement>
       </block>
     </statement>
