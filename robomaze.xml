@@ -57,72 +57,72 @@
           </block>
         </statement>
         <value name="IF2">
-          <block type="logic_compare" id="20" inline="true">
+          <block type="logic_compare" id="14" inline="true">
             <field name="OP">GT</field>
             <value name="A">
-              <block type="sensor_object" id="21">
+              <block type="sensor_object" id="15">
                 <field name="OBJECT">RIGHTFRONT</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="22">
+              <block type="math_number" id="16">
                 <field name="NUM">80</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO2">
-          <block type="movement_rightmotor" id="23" inline="true">
+          <block type="movement_rightmotor" id="17" inline="true">
             <value name="MOVRIGHT">
-              <block type="math_number" id="24">
+              <block type="math_number" id="18">
                 <field name="NUM">100</field>
               </block>
             </value>
           </block>
         </statement>
         <value name="IF3">
-          <block type="logic_compare" id="25" inline="true">
+          <block type="logic_compare" id="19" inline="true">
             <field name="OP">GT</field>
             <value name="A">
-              <block type="sensor_object" id="26">
+              <block type="sensor_object" id="20">
                 <field name="OBJECT">REAR</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="27">
+              <block type="math_number" id="21">
                 <field name="NUM">80</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO3">
-          <block type="movement_forward" id="28"></block>
+          <block type="movement_forward" id="22"></block>
         </statement>
         <value name="IF4">
-          <block type="logic_compare" id="29" inline="true">
+          <block type="logic_compare" id="23" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_object" id="30">
+              <block type="sensor_object" id="24">
                 <field name="OBJECT">RIGHTSIDE</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="31">
+              <block type="math_number" id="25">
                 <field name="NUM">80</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO4">
-          <block type="movement_right" id="32"></block>
+          <block type="movement_right" id="26"></block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="37"></block>
+          <block type="movement_forward" id="27"></block>
         </statement>
         <next>
-          <block type="robot_delay" id="38" inline="true">
+          <block type="robot_delay" id="28" inline="true">
             <value name="DELAY">
-              <block type="math_number" id="39">
+              <block type="math_number" id="29">
                 <field name="NUM">100</field>
               </block>
             </value>
@@ -131,7 +131,7 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="40"></block>
+      <block type="movement_stop" id="30"></block>
     </next>
   </block>
 </xml>
