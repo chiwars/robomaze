@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1" inline="false" x="17" y="-18">
+  <block type="controls_whileUntil" id="1" inline="false" x="27" y="2">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="2">
@@ -8,60 +8,13 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="3" inline="false">
-        <mutation elseif="4" else="1"></mutation>
+        <mutation elseif="2" else="1"></mutation>
         <value name="IF0">
-          <block type="logic_compare" id="4" inline="true">
-            <field name="OP">LT</field>
-            <value name="A">
-              <block type="sensor_object" id="5">
-                <field name="OBJECT">LEFTFRONT</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="6">
-                <field name="NUM">90</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO0">
-          <block type="movement_right" id="7"></block>
-        </statement>
-        <value name="IF1">
-          <block type="logic_compare" id="8" inline="true">
+          <block type="logic_compare" id="14" inline="true">
             <field name="OP">GT</field>
             <value name="A">
               <block type="sensor_object" id="9">
                 <field name="OBJECT">LEFTSIDE</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="10">
-                <field name="NUM">90</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO1">
-          <block type="movement_setmotors" id="11" inline="true">
-            <value name="BOTHMOVLEFT">
-              <block type="math_number" id="12">
-                <field name="NUM">-50</field>
-              </block>
-            </value>
-            <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="13">
-                <field name="NUM">50</field>
-              </block>
-            </value>
-          </block>
-        </statement>
-        <value name="IF2">
-          <block type="logic_compare" id="14" inline="true">
-            <field name="OP">GT</field>
-            <value name="A">
-              <block type="sensor_object" id="15">
-                <field name="OBJECT">RIGHTFRONT</field>
               </block>
             </value>
             <value name="B">
@@ -71,21 +24,10 @@
             </value>
           </block>
         </value>
-        <statement name="DO2">
-          <block type="movement_setmotors" id="17" inline="true">
-            <value name="BOTHMOVLEFT">
-              <block type="math_number" id="18">
-                <field name="NUM">50</field>
-              </block>
-            </value>
-            <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="19">
-                <field name="NUM">-50</field>
-              </block>
-            </value>
-          </block>
+        <statement name="DO0">
+          <block type="movement_left" id="94"></block>
         </statement>
-        <value name="IF3">
+        <value name="IF1">
           <block type="logic_compare" id="20" inline="true">
             <field name="OP">GT</field>
             <value name="A">
@@ -100,10 +42,10 @@
             </value>
           </block>
         </value>
-        <statement name="DO3">
+        <statement name="DO1">
           <block type="movement_forward" id="23"></block>
         </statement>
-        <value name="IF4">
+        <value name="IF2">
           <block type="logic_compare" id="24" inline="true">
             <field name="OP">GT</field>
             <value name="A">
@@ -118,7 +60,7 @@
             </value>
           </block>
         </value>
-        <statement name="DO4">
+        <statement name="DO2">
           <block type="movement_right" id="27"></block>
         </statement>
         <statement name="ELSE">
